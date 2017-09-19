@@ -3,7 +3,6 @@ package org.neo4j.cloudfoundry
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
-
 @SpringBootApplication
 class ServiceBroker
 
