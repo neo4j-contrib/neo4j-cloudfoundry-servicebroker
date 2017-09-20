@@ -9,7 +9,7 @@ class CatalogController {
 
     @GetMapping("/v2/catalog")
     fun getCatalogInfo(): CatalogInfo {
-        val enterprisePlan = Plan(UUID.fromString("6973238a-b21a-4761-abaf-2eaadb4e3723"), "enterprise edition",
+        val enterprisePlan = Plan(UUID.fromString("6973238a-b21a-4761-abaf-2eaadb4e3723"), "enterprise-edition",
                 "enterprise-grade availability, management, and scale-up and scale-out capabilities", false)
         val service = Service("neo4j-enterprise", UUID.fromString("fc42c8a4-25ca-49e5-9919-e7a03e18d814"), "the world's leading graph database", false,
                 listOf(enterprisePlan))
