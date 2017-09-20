@@ -25,11 +25,11 @@ class CatalogApiTest {
     @Test
     fun `retrieves a catalog`() {
         mockMvc.perform(get("/v2/catalog")).andExpect(
-                jsonPath("$.services[0].name", equalTo("neo4j-enterprise"))).andExpect(
+                jsonPath("$.services[0].name", equalTo("neo4j"))).andExpect(
                 jsonPath("$.services[0].id", equalTo("fc42c8a4-25ca-49e5-9919-e7a03e18d814"))).andExpect(
                 jsonPath("$.services[0].description", equalTo("the world's leading graph database"))).andExpect(jsonPath("$.services[0].bindable", equalTo(false))).andExpect(
                 jsonPath("$.services[0].plans[0].id", equalTo("6973238a-b21a-4761-abaf-2eaadb4e3723"))).andExpect(
-                jsonPath("$.services[0].plans[0].name", equalTo("enterprise-edition"))).andExpect(
+                jsonPath("$.services[0].plans[0].name", equalTo("neo4j-enterprise-edition"))).andExpect(
                 jsonPath("$.services[0].plans[0].description", equalTo("enterprise-grade availability, management, and scale-up and scale-out capabilities"))).andExpect(
                 jsonPath("$.services[0].plans[0].free", equalTo(false)))
     }
