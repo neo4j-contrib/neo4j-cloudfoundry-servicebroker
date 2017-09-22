@@ -73,6 +73,7 @@
     </dependencies>
 
     <build>
+        <finalName>neo4j-broker</finalName>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
         <testSourceDirectory>src/test/kotlin</testSourceDirectory>
         <plugins>
